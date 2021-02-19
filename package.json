@@ -43,7 +43,8 @@
     "@ckeditor/ckeditor5-paragraph": "^25.0.0",
     "@ckeditor/ckeditor5-paste-from-office": "^25.0.0",
     "@ckeditor/ckeditor5-table": "^25.0.0",
-    "@ckeditor/ckeditor5-typing": "^25.0.0"
+    "@ckeditor/ckeditor5-typing": "^25.0.0",
+    "@wiris/mathtype-ckeditor5": "^7.24.4"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^25.0.0",
@@ -73,6 +74,6 @@
   "scripts": {
     "build": "webpack --mode production",
     "preversion": "npm run build",
-    "start": "http-server -o"
+    "start": "npx http-server -o ./sample -s -c-1"
   }
 }
