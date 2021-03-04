@@ -105,4 +105,4 @@ InlineEditor.defaultConfig = {
 
 const watchdog = new EditorWatchdog(InlineEditor);
 
-export { InlineEditor, watchdog };
+module.exports = { InlineEditor, watchdog };
