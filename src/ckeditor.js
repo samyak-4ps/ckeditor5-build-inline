@@ -31,9 +31,8 @@ import TableToolbar from "@ckeditor/ckeditor5-table/src/tabletoolbar";
 import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformation";
 import CloudServices from "@ckeditor/ckeditor5-cloud-services/src/cloudservices";
 import MathType from "@wiris/mathtype-ckeditor5";
-import EditorWatchdog from "@ckeditor/ckeditor5-watchdog/src/editorwatchdog";
 
-class InlineEditor extends InlineEditorBase {}
+export default class InlineEditor extends InlineEditorBase {}
 
 // Plugins to include in the build.
 InlineEditor.builtinPlugins = [
@@ -102,7 +101,3 @@ InlineEditor.defaultConfig = {
   // This value must be kept in sync with the language defined in webpack.config.js.
   language: "en",
 };
-
-const watchdog = new EditorWatchdog(InlineEditor);
-
-module.exports = { InlineEditor, watchdog };
